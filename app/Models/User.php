@@ -8,7 +8,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
-class User extends Authenticatable
+class User extends Authenticatable implements MustVerifyEmail
 {
     use HasApiTokens, HasFactory, Notifiable;
 
@@ -21,6 +21,9 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'two_factor_type',
+        'phone_number',
+        'user_role',
     ];
 
     /**
@@ -41,4 +44,49 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+    public function hasTwoFactor($key){
+        return $this->two_factor_type == $key;
+    }
+
+
+    public function activeCode(){
+        return $this->hasMany(ActiveCode::class);
+    }
+
+    public function setPasswordAttribute($value){
+        $this->attributes['password'] = bcrypt($value);
+    }
+
+    public function isSuperAdmin(){
+        return $this->user_role == 'administrator';
+    }
+
+    public function isTwoFactorAuthenticationEnable(){
+        return $this->two_factor_type !== 'off';
+    }
+
+    public function isSmsTwoFactorAuthenticationEnable(){
+        return $this->two_factor_type == 'sms';
+    }
+
+//    public function permissions()
+//    {
+//        return $this->belongsToMany(Permission::class);
+//    }
+
+//    public function roles()
+//    {
+//        return $this->belongsToMany(Role::class);
+//    }
+//
+//    public function hasRole($roles)
+//    {
+//        return !! $roles->intersect( $this->roles )->all();
+//    }
+//    public function hasPermission($permission)
+//    {
+//        return $this->permissions->contains('name', $permission->name) || $this->hasRole($permission->roles);
+//    }
 }

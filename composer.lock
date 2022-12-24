@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c61ff82cbf0142a401a48a8161e1595a",
+    "content-hash": "889f2f48e720c867ee843d3503df0970",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1264,6 +1264,75 @@
             "time": "2022-09-08T13:45:54+00:00"
         },
         {
+            "name": "laravel/socialite",
+            "version": "v5.5.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/socialite.git",
+                "reference": "1cd1682b709b8808a5b5dbb68179a58d1342aa7b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/socialite/zipball/1cd1682b709b8808a5b5dbb68179a58d1342aa7b",
+                "reference": "1cd1682b709b8808a5b5dbb68179a58d1342aa7b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "guzzlehttp/guzzle": "^6.0|^7.0",
+                "illuminate/contracts": "^6.0|^7.0|^8.0|^9.0",
+                "illuminate/http": "^6.0|^7.0|^8.0|^9.0",
+                "illuminate/support": "^6.0|^7.0|^8.0|^9.0",
+                "league/oauth1-client": "^1.10.1",
+                "php": "^7.2|^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "orchestra/testbench": "^4.0|^5.0|^6.0|^7.0",
+                "phpunit/phpunit": "^8.0|^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Socialite\\SocialiteServiceProvider"
+                    ],
+                    "aliases": {
+                        "Socialite": "Laravel\\Socialite\\Facades\\Socialite"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Socialite\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Laravel wrapper around OAuth 1 & OAuth 2 libraries.",
+            "homepage": "https://laravel.com",
+            "keywords": [
+                "laravel",
+                "oauth"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/socialite/issues",
+                "source": "https://github.com/laravel/socialite"
+            },
+            "time": "2022-11-08T15:07:05+00:00"
+        },
+        {
             "name": "laravel/tinker",
             "version": "v2.7.3",
             "source": {
@@ -1330,6 +1399,67 @@
                 "source": "https://github.com/laravel/tinker/tree/v2.7.3"
             },
             "time": "2022-11-09T15:11:38+00:00"
+        },
+        {
+            "name": "laravel/ui",
+            "version": "v3.4.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/ui.git",
+                "reference": "65ec5c03f7fee2c8ecae785795b829a15be48c2c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/ui/zipball/65ec5c03f7fee2c8ecae785795b829a15be48c2c",
+                "reference": "65ec5c03f7fee2c8ecae785795b829a15be48c2c",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^8.42|^9.0",
+                "illuminate/filesystem": "^8.42|^9.0",
+                "illuminate/support": "^8.82|^9.0",
+                "illuminate/validation": "^8.42|^9.0",
+                "php": "^7.3|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.23|^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Ui\\UiServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Ui\\": "src/",
+                    "Illuminate\\Foundation\\Auth\\": "auth-backend/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Laravel UI utilities and presets.",
+            "keywords": [
+                "laravel",
+                "ui"
+            ],
+            "support": {
+                "source": "https://github.com/laravel/ui/tree/v3.4.6"
+            },
+            "time": "2022-05-20T13:38:08+00:00"
         },
         {
             "name": "league/commonmark",
@@ -1668,6 +1798,197 @@
                 }
             ],
             "time": "2022-04-17T13:12:02+00:00"
+        },
+        {
+            "name": "league/oauth1-client",
+            "version": "v1.10.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/oauth1-client.git",
+                "reference": "d6365b901b5c287dd41f143033315e2f777e1167"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/oauth1-client/zipball/d6365b901b5c287dd41f143033315e2f777e1167",
+                "reference": "d6365b901b5c287dd41f143033315e2f777e1167",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-openssl": "*",
+                "guzzlehttp/guzzle": "^6.0|^7.0",
+                "guzzlehttp/psr7": "^1.7|^2.0",
+                "php": ">=7.1||>=8.0"
+            },
+            "require-dev": {
+                "ext-simplexml": "*",
+                "friendsofphp/php-cs-fixer": "^2.17",
+                "mockery/mockery": "^1.3.3",
+                "phpstan/phpstan": "^0.12.42",
+                "phpunit/phpunit": "^7.5||9.5"
+            },
+            "suggest": {
+                "ext-simplexml": "For decoding XML-based responses."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev",
+                    "dev-develop": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\OAuth1\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Corlett",
+                    "email": "bencorlett@me.com",
+                    "homepage": "http://www.webcomm.com.au",
+                    "role": "Developer"
+                }
+            ],
+            "description": "OAuth 1.0 Client Library",
+            "keywords": [
+                "Authentication",
+                "SSO",
+                "authorization",
+                "bitbucket",
+                "identity",
+                "idp",
+                "oauth",
+                "oauth1",
+                "single sign on",
+                "trello",
+                "tumblr",
+                "twitter"
+            ],
+            "support": {
+                "issues": "https://github.com/thephpleague/oauth1-client/issues",
+                "source": "https://github.com/thephpleague/oauth1-client/tree/v1.10.1"
+            },
+            "time": "2022-04-15T14:02:14+00:00"
+        },
+        {
+            "name": "melipayamak/laravel",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Melipayamak/melipayamak-laravel.git",
+                "reference": "8666e3afb2248c5de73b35e3c709a235a7a15393"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Melipayamak/melipayamak-laravel/zipball/8666e3afb2248c5de73b35e3c709a235a7a15393",
+                "reference": "8666e3afb2248c5de73b35e3c709a235a7a15393",
+                "shasum": ""
+            },
+            "require": {
+                "melipayamak/php": "1.0.0"
+            },
+            "type": "laravel-package",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Melipayamak\\Laravel\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "Melipayamak": "Melipayamak\\Laravel\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Melipayamak\\Laravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "melipayamak",
+                    "email": "melipayamak.ir@gmail.com"
+                },
+                {
+                    "name": "Ara Code It",
+                    "email": "ahnara92@gmail.com"
+                }
+            ],
+            "description": "Laravel Melipayamak Integration",
+            "homepage": "http://github.com/Melipayamak/melipayamak-laravel",
+            "keywords": [
+                "api",
+                "laravel",
+                "melipayamak",
+                "sms"
+            ],
+            "support": {
+                "issues": "https://github.com/Melipayamak/melipayamak-laravel/issues",
+                "source": "https://github.com/Melipayamak/melipayamak-laravel/tree/1.0.0"
+            },
+            "time": "2019-12-23T13:20:17+00:00"
+        },
+        {
+            "name": "melipayamak/php",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Melipayamak/melipayamak-php.git",
+                "reference": "b8f7db07eef1fa57f8a23d379949e3f04cb923b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Melipayamak/melipayamak-php/zipball/b8f7db07eef1fa57f8a23d379949e3f04cb923b8",
+                "reference": "b8f7db07eef1fa57f8a23d379949e3f04cb923b8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Melipayamak\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Melipayamak Team",
+                    "email": "melipayamak.ir@gmail.com"
+                },
+                {
+                    "name": "Ara Code It",
+                    "email": "ahnara92@gmail.com"
+                },
+                {
+                    "name": "Amirhossein Mehrvarzi",
+                    "email": "info@trigger.ir"
+                }
+            ],
+            "description": "A PHP wrapper for melipayamak's web services",
+            "homepage": "http://github.com/Melipayamak/melipayamak-php",
+            "keywords": [
+                "api",
+                "melipayamak",
+                "sms"
+            ],
+            "support": {
+                "issues": "https://github.com/Melipayamak/melipayamak-php/issues",
+                "source": "https://github.com/Melipayamak/melipayamak-php/tree/1.0.0"
+            },
+            "time": "2019-12-23T13:19:36+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -5204,6 +5525,72 @@
                 "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/2.2.5"
             },
             "time": "2022-09-12T13:28:28+00:00"
+        },
+        {
+            "name": "uxweb/sweet-alert",
+            "version": "2.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/uxweb/sweet-alert.git",
+                "reference": "e9eb83d7d991de0fcb74398a698e0cdfef6d189d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/uxweb/sweet-alert/zipball/e9eb83d7d991de0fcb74398a698e0cdfef6d189d",
+                "reference": "e9eb83d7d991de0fcb74398a698e0cdfef6d189d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/session": "~5.0|^6.0|^7.0|^8.0",
+                "illuminate/support": "~5.0|^6.0|^7.0|^8.0",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "mockery/mockery": "^1.0",
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "UxWeb\\SweetAlert\\SweetAlertServiceProvider"
+                    ],
+                    "aliases": {
+                        "Alert": "UxWeb\\SweetAlert\\SweetAlert"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/SweetAlert/functions.php"
+                ],
+                "psr-4": {
+                    "UxWeb\\SweetAlert\\": "src/SweetAlert/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Uziel Bueno",
+                    "email": "ux.webs@gmail.com"
+                }
+            ],
+            "description": "A simple PHP package to show Sweet Alerts with the Laravel Framework",
+            "keywords": [
+                "alert",
+                "laravel",
+                "notifier",
+                "sweet"
+            ],
+            "support": {
+                "issues": "https://github.com/uxweb/sweet-alert/issues",
+                "source": "https://github.com/uxweb/sweet-alert/tree/2.0.5"
+            },
+            "time": "2020-09-14T23:22:32+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
